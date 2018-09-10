@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slider en javascript</title>
+</head>
+<body>
+
+		<img src="tof1.jpg" width="500" height="500" alt="" id="slider" />
+		
+<script type="text/javascript">
+var image=["tof1.jpg","tof2.jpg","tof3.jpg","tof4.jpg"];
+var i=0;
+		setInterval(function()
+		{
+			document.getElementById("slider").src=image[i];
+			i++;
+			if (i==4) i=0;
+		},1000);
+</script>
+</body>
+</html>
